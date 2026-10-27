@@ -46,7 +46,17 @@
   "description": "Clínica de rehabilitación física con fisioterapia, medicina de rehabilitación, nutriología y psicología.",
   "image": "img/og-fisioar.jpg",
   "logo": "img/logo-fisioar-color.png",
-  "telephone": "+528331349348",
+  "telephone": ["+528331349348", "+528331042376"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Andador Margaritas No. 14, Plaza Palmas",
+    "addressLocality": "Tampico",
+    "addressRegion": "Tamaulipas",
+    "addressCountry": "MX"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 22.2579745, "longitude": -97.8754027 },
+  "hasMap": "https://maps.app.goo.gl/2gR1wbJf9eUw7Lbn9",
+  "sameAs": ["https://www.facebook.com/fisioar.tampico"],
   "priceRange": "$$",
   "knowsLanguage": "es-MX"
 }
@@ -541,19 +551,40 @@
       <p class="lead rv">Escríbenos y una persona del equipo te responde para coordinar tu valoración.</p>
       <ul class="contact__list rv">
         <li>
-          <span class="contact__icon"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg></span>
+          <span class="contact__icon"><svg class="i" aria-hidden="true"><use href="#i-whatsapp-logo"/></svg></span>
           <div><strong>WhatsApp</strong><a href="https://wa.me/528331349348" target="_blank" rel="noopener">833 134 9348</a></div>
         </li>
         <li>
+          <span class="contact__icon"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg></span>
+          <div><strong>Teléfono</strong><a href="tel:+528331042376">833 104 2376</a></div>
+        </li>
+        <li>
           <span class="contact__icon"><svg class="i" aria-hidden="true"><use href="#i-facebook-logo"/></svg></span>
-          <!-- PENDIENTE: reemplazar este enlace de búsqueda por la URL oficial de la página de Facebook del cliente -->
-          <div><strong>Facebook</strong><a href="https://www.facebook.com/search/top?q=FISIOAR%20Rehabilitaci%C3%B3n%20F%C3%ADsica" target="_blank" rel="noopener">FISIOAR Rehabilitación Física</a></div>
+          <div><strong>Facebook</strong><a href="https://www.facebook.com/fisioar.tampico" target="_blank" rel="noopener">Fisioar Tampico</a></div>
         </li>
         <li>
           <span class="contact__icon"><svg class="i" aria-hidden="true"><use href="#i-map-pin"/></svg></span>
-          <div><strong>Ubicación y horarios</strong><span>Te los compartimos al escribirnos.</span></div>
+          <div><strong>Ubicación</strong><a href="https://maps.app.goo.gl/2gR1wbJf9eUw7Lbn9" target="_blank" rel="noopener">Andador Margaritas No. 14, Plaza Palmas, Tampico, Tamps.</a></div>
+        </li>
+        <li>
+          <span class="contact__icon"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg></span>
+          <div><strong>Horarios</strong><span>Te los compartimos al escribirnos.</span></div>
         </li>
       </ul>
+
+      <!-- Mapa: pin tomado del enlace de Google Maps del cliente (22.2579745, -97.8754027) -->
+      <div class="map rv" style="--d:.1s">
+        <iframe class="map__frame" title="Mapa con la ubicación de FISIOAR en Plaza Palmas, Tampico"
+                src="https://www.google.com/maps?q=22.2579745,-97.8754027&amp;z=17&amp;hl=es&amp;output=embed"
+                width="600" height="320" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="map__bar">
+          <p>Plaza Palmas, Tampico</p>
+          <a class="btn btn--ghost btn--sm" href="https://www.google.com/maps/dir/?api=1&amp;destination=22.2579745,-97.8754027" target="_blank" rel="noopener">
+            <span>Cómo llegar</span>
+            <svg class="i" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
+          </a>
+        </div>
+      </div>
     </div>
 
     <form class="form rv" id="waForm" novalidate style="--d:.15s">
@@ -624,6 +655,9 @@
     <div class="footer__col">
       <h4>Contacto</h4>
       <a href="https://wa.me/528331349348" target="_blank" rel="noopener">WhatsApp 833 134 9348</a>
+      <a href="tel:+528331042376">Tel. 833 104 2376</a>
+      <a href="https://www.facebook.com/fisioar.tampico" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://maps.app.goo.gl/2gR1wbJf9eUw7Lbn9" target="_blank" rel="noopener">Andador Margaritas No. 14, Plaza Palmas, Tampico, Tamps.</a>
       <a href="#contacto">Solicitar valoración</a>
     </div>
   </div>

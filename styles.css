@@ -788,6 +788,19 @@ body::after {
 .contact__list a { background: linear-gradient(var(--sky), var(--sky)) 0 100% / 0 1px no-repeat; transition: background-size .5s var(--ease), color .3s; }
 .contact__list a:hover { background-size: 100% 1px; color: var(--sky-2); }
 
+/* mapa: el embed de Google es claro, se invierte para que encaje con el tema oscuro */
+.map {
+  margin-top: 36px; overflow: hidden; border: 1px solid var(--line-2); border-radius: var(--r-card);
+  background: var(--ink-850);
+  box-shadow: 0 40px 100px -60px rgba(36, 55, 143, .8), inset 0 1px 0 rgba(255, 255, 255, .06);
+}
+.map__frame {
+  display: block; width: 100%; height: clamp(240px, 34vw, 320px); border: 0;
+  filter: invert(.92) hue-rotate(180deg) saturate(.8) contrast(.92);
+}
+.map__bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 18px; padding: 14px 18px 14px 22px; }
+.map__bar p { font: 500 .8rem/1.3 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--faint); }
+
 .form {
   padding: clamp(24px, 4vw, 44px); border: 1px solid var(--line-2); border-radius: var(--r-card);
   background: linear-gradient(160deg, rgba(27, 42, 107, .5), rgba(7, 13, 34, .92));
